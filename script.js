@@ -53,6 +53,8 @@ function getMealById(mealID) {
 
       addMealToDOM(meal);
     });
+  mealsEl.innerHTML = "";
+  resultHeading.innerHTML = "";
 }
 
 //random fetch
@@ -92,10 +94,12 @@ function addMealToDOM(meal) {
       </div>
       <div class="main">
         <p>${meal.strInstructions}</p>
+        <div class="ingredients">
         <h2>Ingredients</h2>
         <ul>
           ${ingredients.map((ing) => `<li>${ing}</li>`).join("")}
         </ul>
+        </div>
       </div>
     </div>
   `;

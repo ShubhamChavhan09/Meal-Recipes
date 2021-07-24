@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -6,12 +6,10 @@
 body {
   padding: 0;
   margin: 0;
-  background: url(./img/lukas-blazek-f-TWhXOrLiU-unsplash.jpg) fixed;
-
-  background-size: cover;
+  /* background: url(./img/lukas-blazek-f-TWhXOrLiU-unsplash.jpg) fixed; */
+  background: #fff;
   color: #273c75;
   font-family: "Lato", sans-serif;
-  text-shadow: 0 0 2px black;
 }
 .container {
   display: flex;
@@ -117,6 +115,7 @@ p {
   margin: 0;
   letter-spacing: 0.5px;
   line-height: 1.5;
+  font-weight: 400;
 }
 .single-meal ul {
   padding-left: 0;
@@ -124,17 +123,23 @@ p {
 }
 .single-meal li {
   border: 1px solid white;
-  border-radius: 5px;
-  background-color: white;
+  border-radius: 4px;
+  background: #bee8b0;
   display: inline-block;
   color: black;
-  font-size: 12px;
-  font-weight: bold;
-  padding: 5px;
-  margin: 0 5px 5px 0;
+  font-size: 14px;
+  padding: 8px;
+  margin: 0 10px 10px 0;
 }
 .main {
   padding: 20px;
+}
+
+.ingredients {
+  padding: 16px;
+  background: #f1faee;
+  border-radius: 8px;
+  margin: 16px 0;
 }
 
 @media (max-width: 1020px) {
